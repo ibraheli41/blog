@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ini adalah home dari theme on Bokumentation</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Ini adalah home dari theme on Bokumentation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jun 2024 18:00:32 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ESP32 CAM CCTV PROJECT</title>
+      <link>http://localhost:1313/posts/esp32-cctv-with-cv-using-tensorflow-lite/</link>
+      <pubDate>Mon, 10 Jun 2024 18:00:32 +0700</pubDate>
+      <guid>http://localhost:1313/posts/esp32-cctv-with-cv-using-tensorflow-lite/</guid>
+      <description>Task: Get ready for task:&#xA;Find tutorial about ESP32 + OV7670 and Tensorflow Lite Apply code and Try (you can call adit for help) Create 3D model and Print (jean) Assembly Create documentation and upload to YouTube Feature Can show imaging camera from website or web server can capture photo and video can save photo and video in sd card can download the file using LAN can record unlimited recording can night vision mode Machine Learning Feature can detect people and identification detect people and send warning to user What We Need Hardware ESP32 Datasheet &amp;amp; Pinout: OV7670 Datasheet &amp;amp; Pinout: Micro-SD Adapter Datasheet &amp;amp; Pinout: For night vision: infrared led that supported by OV7670 Library C and C++ compiler Arduino IDE and the library Espressif IDE and the library Platform IO and the library CH340G software driver Github Unofficial esp32cam or maybe official by espressif esp32-camera</description>
+    </item>
+    <item>
+      <title>Hugo Quick Start</title>
+      <link>http://localhost:1313/posts/hugo-static-site-generator-framework/</link>
+      <pubDate>Mon, 10 Jun 2024 18:00:32 +0700</pubDate>
+      <guid>http://localhost:1313/posts/hugo-static-site-generator-framework/</guid>
+      <description>Quickstart Generating new site use hugo command&#xA;hugo new site &amp;lt;nama situs atau folder&amp;gt; Nanti akan generate folder dengan nama situs serta file yang dibutuhkan&#xA;Open your website folder that have created&#xA;cd &amp;lt;folder nama situs&amp;gt; Masuk ke folder yang sudah dibuat&#xA;Git command for initiate&#xA;git init Inisialisasi git&#xA;Install hugo theme using git submodule add space themes/folder_name&#xA;git submodule add &amp;lt;hugo theme link dari github&amp;gt; themes/&amp;lt;nama folder tema&amp;gt; Install tema hugo</description>
+    </item>
+    <item>
+      <title>Myfirst</title>
+      <link>http://localhost:1313/posts/myfirst/</link>
+      <pubDate>Mon, 10 Jun 2024 18:00:32 +0700</pubDate>
+      <guid>http://localhost:1313/posts/myfirst/</guid>
+      <description>this is new post asdakjsdhajksdhquweoahsdkajsdajsdhaksdhmxzcaksdjhasdj</description>
+    </item>
+    <item>
+      <title>Upgrading High CRI LAMP</title>
+      <link>http://localhost:1313/posts/upgrading-my-lamp-into-studio-quality/</link>
+      <pubDate>Mon, 10 Jun 2024 18:00:32 +0700</pubDate>
+      <guid>http://localhost:1313/posts/upgrading-my-lamp-into-studio-quality/</guid>
+      <description>Task:&#xA;Why we did that? Definition of CRI and RA Benefit How we did? list of ingredient we did closing And that how we Upgrading my Lamp into Studio Quality </description>
+    </item>
+    <item>
+      <title>Post 3</title>
+      <link>http://localhost:1313/posts/post-3/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/post-3/</guid>
+      <description>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.</description>
+    </item>
+    <item>
+      <title>Post 2</title>
+      <link>http://localhost:1313/posts/post-2/</link>
+      <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/post-2/</guid>
+      <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&#xA;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
+    </item>
+    <item>
+      <title>Post 1</title>
+      <link>http://localhost:1313/posts/post-1/</link>
+      <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/post-1/</guid>
+      <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&#xA;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/c-standar-library-usefull-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/c-standar-library-usefull-function/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/c&#43;&#43;-standard-library-usefull-function/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/c&#43;&#43;-standard-library-usefull-function/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/git-command/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/git-command/</guid>
+      <description>Yang biasa digunakan&#xA;git init #initialize an existing directory as Git Repo git clone [url] #copy or download entire Repo via URL git add . #add recent directory to stage git commit -m &amp;#34;[description]&amp;#34; #staged content as a new commit snapshot git push #upload to git repository Instalasi Git Windows -&amp;gt; download github for windows Linux Ubuntu -&amp;gt; sudo apt-get install git MacOS -&amp;gt; brew install git Setup git config --global user.</description>
+    </item>
+  </channel>
+</rss>

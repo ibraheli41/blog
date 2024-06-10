@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title> | Bokumentation</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Bokumentation</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+    </li>
+    <li>
+      <a href="/tags/">Tags</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+  <h1></h1>
+
+  
+  
+  <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time>
+
+  <p>Yang biasa digunakan</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init <span style="color:#75715e">#initialize an existing directory as Git Repo</span>
+</span></span><span style="display:flex;"><span>git clone <span style="color:#f92672">[</span>url<span style="color:#f92672">]</span> <span style="color:#75715e">#copy or download entire Repo via URL</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git add . <span style="color:#75715e">#add recent directory to stage</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;[description]&#34;</span> <span style="color:#75715e">#staged content as a new commit snapshot</span>
+</span></span><span style="display:flex;"><span>git push <span style="color:#75715e">#upload to git repository</span>
+</span></span></code></pre></div><h1 id="instalasi-git">Instalasi Git</h1>
+<h6 id="windows----download-github-for-windows">Windows -&gt;  download github for windows</h6>
+<h6 id="linux-ubuntu---sudo-apt-get-install-git">Linux Ubuntu -&gt; <code>sudo apt-get install git</code></h6>
+<h6 id="macos----brew-install-git">MacOS -&gt;  <code>brew install git</code></h6>
+<h1 id="setup">Setup</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git config --global user.name “<span style="color:#f92672">[</span>firstname lastname<span style="color:#f92672">]</span>”
+</span></span><span style="display:flex;"><span>git config --global user.email “<span style="color:#f92672">[</span>valid-email<span style="color:#f92672">]</span>”
+</span></span><span style="display:flex;"><span>git config --global color.ui auto
+</span></span></code></pre></div><h1 id="setup--init">Setup &amp; Init</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git clone <span style="color:#f92672">[</span>url<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h1 id="stage--snapshot">Stage &amp; Snapshot</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git status
+</span></span><span style="display:flex;"><span>git add <span style="color:#f92672">[</span>file<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git reset <span style="color:#f92672">[</span>file<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git diff
+</span></span><span style="display:flex;"><span>git diff --staged
+</span></span><span style="display:flex;"><span>git commit -m “<span style="color:#f92672">[</span>descriptive message<span style="color:#f92672">]</span>”
+</span></span></code></pre></div><h1 id="branch--merge">Branch &amp; Merge</h1>
+<p>Branch = Percabangan
+fungsi diciptakan branch -&gt;
+misal ingin membuat ecommer. tapi kita tidak mungkin untuk menunggu kodingan dari yang lain selesai. Maka dari itu kita kerja dengan environment terpisah supaya tidak mengganggu kodingan lain. Misal ingin membuat fitur login maka kita perlu membuat branch berjudul login dan lain sebagainya.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch
+</span></span><span style="display:flex;"><span>git branch <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git checkout
+</span></span><span style="display:flex;"><span>git merge <span style="color:#f92672">[</span>branch<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git switch
+</span></span><span style="display:flex;"><span>git log
+</span></span></code></pre></div><h1 id="inspect--compare">Inspect &amp; Compare</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log
+</span></span><span style="display:flex;"><span>git log branchB..branchA
+</span></span><span style="display:flex;"><span>git log --follow <span style="color:#f92672">[</span>file<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git diff branchB...branchA
+</span></span><span style="display:flex;"><span>git show <span style="color:#f92672">[</span>SHA<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h1 id="tracking-path-changes">Tracking Path Changes</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git rm <span style="color:#f92672">[</span>file<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git mv <span style="color:#f92672">[</span>existing-path<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>new-path<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git log --stat -M
+</span></span></code></pre></div><h1 id="ignoring-patterns">Ignoring Patterns</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>logs/
+</span></span><span style="display:flex;"><span>*.notes
+</span></span><span style="display:flex;"><span>pattern*/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git config --global core.excludesfile <span style="color:#f92672">[</span>file<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h1 id="share--update">Share &amp; Update</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git remote add <span style="color:#f92672">[</span>alias<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>url<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git fetch <span style="color:#f92672">[</span>alias<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git merge <span style="color:#f92672">[</span>alias<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>branch<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git push <span style="color:#f92672">[</span>alias<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>branch<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git pull
+</span></span></code></pre></div><h1 id="rewrite-history">Rewrite History</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git rebase <span style="color:#f92672">[</span>branch<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>git reset --hard <span style="color:#f92672">[</span>commit<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h1 id="temporary-commits">Temporary Commits</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git stash
+</span></span><span style="display:flex;"><span>git stash list
+</span></span><span style="display:flex;"><span>git stash pop
+</span></span><span style="display:flex;"><span>git stash drop
+</span></span></code></pre></div><h3 id="terminologi">Terminologi</h3>
+<p>Git
+Repositori
+Commit
+Branch
+Email github</p>
+<h3 id="sumber-referensi">Sumber Referensi</h3>
+<p>training.github.com</p>
+<h1 id="successful-git-branching-model">Successful Git Branching Model</h1>
+<p>![[Pasted image 20240610121637.png]]</p>
+
+  
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>

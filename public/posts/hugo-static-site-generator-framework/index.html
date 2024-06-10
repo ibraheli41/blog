@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Hugo Quick Start | Bokumentation</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Bokumentation</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+    </li>
+    <li>
+      <a href="/tags/">Tags</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+  <h1>Hugo Quick Start</h1>
+
+  
+  
+  <time datetime="2024-06-10T18:00:32&#43;07:00">June 10, 2024</time>
+
+  <h1 id="quickstart">Quickstart</h1>
+<p>Generating new site use <code>hugo</code> command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site &lt;nama situs atau folder&gt;
+</span></span></code></pre></div><p>Nanti akan generate folder dengan nama situs serta file yang dibutuhkan</p>
+<p>Open your website folder that have created</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd &lt;folder nama situs&gt;
+</span></span></code></pre></div><p>Masuk ke folder yang sudah dibuat</p>
+<p>Git command for initiate</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p>Inisialisasi git</p>
+<p>Install hugo theme using <code>git submodule add</code> space <code>themes/folder_name</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule add &lt;hugo theme link dari github&gt; themes/&lt;nama folder tema&gt;
+</span></span></code></pre></div><p>Install tema hugo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;theme = &#39;&lt;nama tema hugo&gt;&#39;&#34;</span>  &gt;&gt; hugo.toml
+</span></span></code></pre></div><p>Menambah text ke theme = &lsquo;x&rsquo; ke /hugo.toml</p>
+<pre tabindex="0"><code>hugo server
+</code></pre><p>Menyalakan server</p>
+<p>lanjutan versi youtube</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new content posts/hello-world.md
+</span></span></code></pre></div><p>kemudian edit .md dengan gaya markdown</p>
+<p>Run hugo server. Then copy link or IP address into browser</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server --buildDrafts
+</span></span></code></pre></div><h1 id="change-themes">Change themes</h1>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> &lt;link github&gt; themes/&lt;nama folder&gt;
+</span></span><span style="display:flex;"><span>git submodule update --init --recursive
+</span></span></code></pre></div><p>then</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule update --remote --merge 
+</span></span></code></pre></div><p>this will measure everything is oke</p>
+<p>then edit hugo.yoml theme again</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&lt;nama theme&gt;&#39;</span>
+</span></span></code></pre></div><p>Save and happy</p>
+<h1 id="deploy-at-githubio">Deploy at github.io</h1>
+<p>Create Repository Public that have end line xxxx.github.io
+Push an existing repo from command line</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git remote add origin &lt;github link&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># membuat branch main</span>
+</span></span><span style="display:flex;"><span>git branch -M main 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># upload existing repo ke branch main</span>
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><p>Your site will 404, we need -&gt;
+repo setting -&gt; pages -&gt; source -&gt; github action
+create folder .github on my repo
+create file hugo.yaml</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># Sample workflow for building and deploying a Hugo site to GitHub Pages</span>
+</span></span><span style="display:flex;"><span>name: Deploy Hugo site to Pages
+</span></span><span style="display:flex;"><span>on:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Runs on pushes targeting the default branch</span>
+</span></span><span style="display:flex;"><span>  push:
+</span></span><span style="display:flex;"><span>    branches:
+</span></span><span style="display:flex;"><span>      - main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Allows you to run this workflow manually from the Actions tab</span>
+</span></span><span style="display:flex;"><span>  workflow_dispatch:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages</span>
+</span></span><span style="display:flex;"><span>permissions:
+</span></span><span style="display:flex;"><span>  contents: read
+</span></span><span style="display:flex;"><span>  pages: write
+</span></span><span style="display:flex;"><span>  id-token: write
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.</span>
+</span></span><span style="display:flex;"><span>concurrency:
+</span></span><span style="display:flex;"><span>  group: <span style="color:#e6db74">&#34;pages&#34;</span>
+</span></span><span style="display:flex;"><span>  cancel-in-progress: false
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Default to bash</span>
+</span></span><span style="display:flex;"><span>defaults:
+</span></span><span style="display:flex;"><span>  run:
+</span></span><span style="display:flex;"><span>    shell: bash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>jobs:
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Build job</span>
+</span></span><span style="display:flex;"><span>  build:
+</span></span><span style="display:flex;"><span>    runs-on: ubuntu-latest
+</span></span><span style="display:flex;"><span>    env:
+</span></span><span style="display:flex;"><span>      HUGO_VERSION: 0.123.0
+</span></span><span style="display:flex;"><span>    steps:
+</span></span><span style="display:flex;"><span>      - name: Install Hugo CLI
+</span></span><span style="display:flex;"><span>        run: |
+</span></span><span style="display:flex;"><span>          wget -O <span style="color:#e6db74">${</span>{ runner.temp <span style="color:#e6db74">}</span><span style="color:#f92672">}</span>/hugo.deb https://github.com/gohugoio/hugo/releases/download/v<span style="color:#e6db74">${</span>HUGO_VERSION<span style="color:#e6db74">}</span>/hugo_extended_<span style="color:#e6db74">${</span>HUGO_VERSION<span style="color:#e6db74">}</span>_linux-amd64.deb <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>          <span style="color:#f92672">&amp;&amp;</span> sudo dpkg -i <span style="color:#e6db74">${</span>{ runner.temp <span style="color:#e6db74">}</span><span style="color:#f92672">}</span>/hugo.deb          
+</span></span><span style="display:flex;"><span>      - name: Install Dart Sass
+</span></span><span style="display:flex;"><span>        run: sudo snap install dart-sass
+</span></span><span style="display:flex;"><span>      - name: Checkout
+</span></span><span style="display:flex;"><span>        uses: actions/checkout@v4
+</span></span><span style="display:flex;"><span>        with:
+</span></span><span style="display:flex;"><span>          submodules: recursive
+</span></span><span style="display:flex;"><span>          fetch-depth: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      - name: Setup Pages
+</span></span><span style="display:flex;"><span>        id: pages
+</span></span><span style="display:flex;"><span>        uses: actions/configure-pages@v4
+</span></span><span style="display:flex;"><span>      - name: Install Node.js dependencies
+</span></span><span style="display:flex;"><span>        run: <span style="color:#e6db74">&#34;[[ -f package-lock.json || -f npm-shrinkwrap.json ]] &amp;&amp; npm ci || true&#34;</span>
+</span></span><span style="display:flex;"><span>      - name: Build with Hugo
+</span></span><span style="display:flex;"><span>        env:
+</span></span><span style="display:flex;"><span>          <span style="color:#75715e"># For maximum backward compatibility with Hugo modules</span>
+</span></span><span style="display:flex;"><span>          HUGO_ENVIRONMENT: production
+</span></span><span style="display:flex;"><span>          HUGO_ENV: production
+</span></span><span style="display:flex;"><span>        run: |
+</span></span><span style="display:flex;"><span>          hugo <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>            --gc <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>            --minify <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>            --baseURL <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>{ steps.pages.outputs.base_url <span style="color:#e6db74">}</span><span style="color:#e6db74">}/&#34;</span>          
+</span></span><span style="display:flex;"><span>      - name: Upload artifact
+</span></span><span style="display:flex;"><span>        uses: actions/upload-pages-artifact@v2
+</span></span><span style="display:flex;"><span>        with:
+</span></span><span style="display:flex;"><span>          path: ./public
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Deployment job</span>
+</span></span><span style="display:flex;"><span>  deploy:
+</span></span><span style="display:flex;"><span>    environment:
+</span></span><span style="display:flex;"><span>      name: github-pages
+</span></span><span style="display:flex;"><span>      url: <span style="color:#e6db74">${</span>{ steps.deployment.outputs.page_url <span style="color:#e6db74">}</span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    runs-on: ubuntu-latest
+</span></span><span style="display:flex;"><span>    needs: build
+</span></span><span style="display:flex;"><span>    steps:
+</span></span><span style="display:flex;"><span>      - name: Deploy to GitHub Pages
+</span></span><span style="display:flex;"><span>        id: deployment
+</span></span><span style="display:flex;"><span>        uses: actions/deploy-pages@v3
+</span></span></code></pre></div><p>then push</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;github action&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><p>if content / posts doesnt showing, delete draft in xxxx.md header
+then</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;publishing posts&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div>
+  
+
+
+  </main>
+  <footer>
+    <p>Copyright 2024. All rights reserved.</p>
+
+  </footer>
+</body>
+</html>
